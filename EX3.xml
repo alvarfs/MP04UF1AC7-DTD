@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE libro_electronico [ 
+    <!ELEMENT libro_electronico (titulo, autor, capitulos+)> 
+    <!ELEMENT titulo (#PCDATA)> 
+    <!ELEMENT autor (#PCDATA)> 
+    <!ELEMENT capitulos (capitulo+)> 
+    <!ELEMENT capitulo (numero, contenido)> 
+    <!ATTLIST capitulo 
+    id ID #REQUIRED 
+    revisor CDATA #IMPLIED 
+    > 
+    <!ELEMENT numero (#PCDATA)> 
+    <!ELEMENT contenido (#PCDATA)> 
+]> 
+
+<libro_electronico>
+    <titulo>dinastia phaluani</titulo>
+    <autor>pool angelo phaluani</autor>
+    <capitulos>
+        <capitulo id="X12">
+            <numero>1</numero>
+            <contenido>contenido de ejemplo!</contenido>
+        </capitulo>
+    </capitulos>
+</libro_electronico>

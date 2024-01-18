@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE blog [ 
+    <!ELEMENT blog (entrada+)> 
+    <!ELEMENT entrada (titulo, contenido, fecha, comentario, valoracion)> 
+    <!ATTLIST entrada 
+    autor CDATA #REQUIRED 
+    > 
+    <!ELEMENT titulo (#PCDATA)> 
+    <!ELEMENT contenido (#PCDATA)> 
+    <!ELEMENT fecha (#PCDATA)> 
+    <!ELEMENT comentario (#PCDATA)> 
+    <!ATTLIST comentario 
+    id ID #REQUIRED 
+    puntuacion CDATA #IMPLIED 
+    > 
+    <!ELEMENT valoracion (#PCDATA)> 
+    <!ATTLIST valoracion 
+    estrellas CDATA #IMPLIED 
+    > 
+]>
+
+<blog>
+    <entrada autor="anass">
+        <titulo>el ninja</titulo>
+        <contenido>contenido de ejemplo</contenido>
+        <fecha>18/01/24</fecha>
+        <comentario id="A01">comentario de ejemplo</comentario>
+        <valoracion estrellas="3/5">libro normalito</valoracion>
+    </entrada>
+</blog>

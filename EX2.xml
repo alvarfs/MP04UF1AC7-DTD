@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE catalogo_productos [ 
+    <!ELEMENT catalogo_productos (producto+)> 
+    <!ELEMENT producto (nombre, precio, descripcion?, valoracion?)> <!ATTLIST producto 
+    id ID #REQUIRED 
+    categoria CDATA #IMPLIED 
+    > 
+    <!ELEMENT nombre (#PCDATA)> 
+    <!ELEMENT precio (#PCDATA)> 
+    <!ELEMENT descripcion (#PCDATA)> 
+    <!ELEMENT valoracion (#PCDATA)> 
+    <!ATTLIST valoracion 
+    puntuacion CDATA #IMPLIED 
+    comentarios CDATA #IMPLIED 
+    > 
+]> 
+
+<catalogo_productos>
+    <producto id="B69">
+        <nombre>HELADO CHOCO</nombre>
+        <precio>3.69</precio>
+        <valoracion puntuacion="4/5">Buena</valoracion>
+    </producto>
+</catalogo_productos>

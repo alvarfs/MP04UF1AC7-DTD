@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE curriculum_vitae [ 
+    <!ELEMENT curriculum_vitae (informacion_personal, educacion, experiencia, habilidades?)> 
+    <!ELEMENT informacion_personal (nombre, contacto, direccion?)> 
+    <!ATTLIST informacion_personal 
+    id ID #REQUIRED 
+    > 
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT contacto (#PCDATA)> 
+    <!ELEMENT direccion (#PCDATA)> 
+    <!ELEMENT educacion (titulo, institucion, fecha)> 
+    <!ELEMENT titulo (#PCDATA)>  <!-- Faltaba este elemento en el enunciado -->
+    <!ELEMENT institucion (#PCDATA)> <!-- Faltaba este elemento en el enunciado -->
+    <!ELEMENT fecha (#PCDATA)> <!-- Faltaba este elemento en el enunciado -->
+    <!ELEMENT experiencia (puesto, empresa, fecha, descripcion?)> 
+    <!ELEMENT puesto (#PCDATA)> <!-- Faltaba este elemento en el enunciado -->
+    <!ELEMENT empresa (#PCDATA)> <!-- Faltaba este elemento en el enunciado -->
+    <!ELEMENT descripcion (#PCDATA)> <!-- Faltaba este elemento en el enunciado -->
+    <!ELEMENT habilidades (habilidad+)> 
+    <!ELEMENT habilidad (#PCDATA)> 
+    <!ATTLIST habilidad 
+    nivel CDATA #IMPLIED 
+    > 
+]> 
+
+<curriculum_vitae>
+    <informacion_personal id="R52">
+        <nombre>Wildo</nombre>
+        <contacto>696.696.696</contacto>
+    </informacion_personal>
+    <educacion>
+        <titulo>Ingeneria</titulo>
+        <institucion>Universidad de Barcelona</institucion>
+        <fecha>20/06/18 - 20/06/21</fecha>
+    </educacion>
+    <experiencia>
+        <puesto>programador</puesto>
+        <empresa>Nomada Studio</empresa>
+        <fecha>14/04/22 - 14/04/23</fecha>
+    </experiencia>
+</curriculum_vitae>

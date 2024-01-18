@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE juego_cartas [
+    <!ELEMENT juego_cartas (jugadores, mazo, reglas)>
+    <!ELEMENT jugadores (jugador+)>
+    <!ELEMENT jugador (nombre, puntuacion)>
+    <!ATTLIST jugador 
+    id ID #REQUIRED
+    equipo CDATA #REQUIRES>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT puntuacion (#PCDATA)>
+    <!ELEMENT mazo (carta+)>
+    <!ELEMENT carta (nombre, tipo, valor)>
+    <!ATTLIST carta
+    id ID #REQUIRED
+    rareza CDATA #REQUIRED>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT tipo (#PCDATA)>
+    <!ELEMENT valor (#PCDATA)>
+    <!ELEMENT reglas (#PCDATA)>
+]>
+
+<juego_cartas> 
+    <jugadores> 
+        <jugador id="1" equipo="A"> 
+            <nombre>Alice</nombre> 
+            <puntuacion>1200</puntuacion> 
+        </jugador> 
+        <jugador id="2" equipo="B"> 
+            <nombre>Bob</nombre> 
+            <puntuacion>1100</puntuacion> 
+        </jugador> 
+    </jugadores> 
+    <mazo> 
+        <carta id="101" rareza="comun"> 
+            <nombre>Carta 1</nombre> 
+            <tipo>Hechizo</tipo> 
+            <valor>10</valor> 
+        </carta> 
+        <carta id="102" rareza="rara"> 
+            <nombre>Carta 2</nombre> 
+            <tipo>Criatura</tipo> 
+            <valor>20</valor> 
+        </carta> 
+    <!-- Agrega más cartas según sea necesario --> 
+    </mazo> 
+    <reglas> 
+        ¡Bienvenido al juego de cartas! 
+    </reglas> 
+</juego_cartas>
+    
