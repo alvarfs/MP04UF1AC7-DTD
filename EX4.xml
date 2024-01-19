@@ -6,7 +6,7 @@
     <!ATTLIST informacion_personal 
     id ID #REQUIRED 
     > 
-    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT nombre (#PCDATA)> <!-- Faltaba este elemento en el enunciado -->
     <!ELEMENT contacto (#PCDATA)> 
     <!ELEMENT direccion (#PCDATA)> 
     <!ELEMENT educacion (titulo, institucion, fecha)> 

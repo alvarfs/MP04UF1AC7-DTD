@@ -5,16 +5,15 @@
     <!ELEMENT jugadores (jugador+)>
     <!ELEMENT jugador (nombre, puntuacion)>
     <!ATTLIST jugador 
-    id ID #REQUIRED
-    equipo CDATA #REQUIRES>
+    id CDATA #REQUIRED
+    equipo CDATA #REQUIRED>
     <!ELEMENT nombre (#PCDATA)>
     <!ELEMENT puntuacion (#PCDATA)>
     <!ELEMENT mazo (carta+)>
     <!ELEMENT carta (nombre, tipo, valor)>
     <!ATTLIST carta
-    id ID #REQUIRED
+    id CDATA #REQUIRED
     rareza CDATA #REQUIRED>
-    <!ELEMENT nombre (#PCDATA)>
     <!ELEMENT tipo (#PCDATA)>
     <!ELEMENT valor (#PCDATA)>
     <!ELEMENT reglas (#PCDATA)>
